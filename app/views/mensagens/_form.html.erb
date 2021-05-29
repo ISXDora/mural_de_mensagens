@@ -1,7 +1,7 @@
 <%= simple_form_for @mensagem do |f| %>
-  <%= f.input :titulo, label: 'Título' %>
-  <%= f.input :corpo, as: :text %> 
-  <%= f.input :autor %> 
-  <%= f.input :email %> 
+  <%= f.input :titulo, label: 'Título', required: false %>
+  <%= f.input :corpo, as: :text, required: false %> 
+  <%= f.input :autor, required: false %> 
+  <%= f.input :email, required: false %> 
   <%= f.button :submit, 'Enviar',class: 'btn-primary' %>
 <% end %> 
